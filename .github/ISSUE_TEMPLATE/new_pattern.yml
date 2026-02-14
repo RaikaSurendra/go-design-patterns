@@ -1,0 +1,42 @@
+name: New Pattern Request
+description: Suggest a new design pattern to add
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Pattern name
+      placeholder: e.g. Circuit Breaker, CQRS, Saga
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Creational
+        - Structural
+        - Behavioral
+        - Synchronization
+        - Concurrency
+        - Messaging
+        - Stability
+        - Profiling
+        - Idioms
+        - Anti-Patterns
+        - New category
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Brief explanation of the pattern and why it's useful in Go
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example (optional)
+      description: Go code snippet or pseudocode if you have one
+      render: go

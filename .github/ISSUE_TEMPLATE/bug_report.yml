@@ -1,0 +1,36 @@
+name: Bug Report
+description: Report incorrect code, broken links, or rendering issues
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Code bug (incorrect implementation)
+        - Broken link
+        - Rendering / styling issue
+        - Typo or grammar
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Affected page
+      description: URL or pattern name
+      placeholder: e.g. https://raikasurendra.github.io/go-design-patterns/creational/builder.html
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong?
+      description: Describe the issue clearly
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
