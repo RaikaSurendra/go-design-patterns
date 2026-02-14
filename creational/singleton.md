@@ -7,6 +7,8 @@ Singleton creational design pattern restricts the instantiation of a type to a s
 ```go
 package singleton
 
+import "sync"
+
 type singleton map[string]string
 
 var (

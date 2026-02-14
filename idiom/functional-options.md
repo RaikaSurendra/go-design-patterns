@@ -82,13 +82,11 @@ func New(filepath string, setters ...Option) error {
 ## Usage
 
 ```go
-emptyFile, err := file.New("/tmp/empty.txt")
-if err != nil {
+if err := file.New("/tmp/empty.txt"); err != nil {
     panic(err)
 }
 
-fillerFile, err := file.New("/tmp/file.txt", file.UID(1000), file.Contents("Lorem Ipsum Dolor Amet"))
-if err != nil {
+if err := file.New("/tmp/file.txt", file.UID(1000), file.Contents("Lorem Ipsum Dolor Amet")); err != nil {
     panic(err)
 }
 ```
