@@ -1,4 +1,4 @@
-# Deadline Pattern
+# Deadline Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The deadline pattern allows a client to stop waiting for a response once a
 specified amount of time has passed, at which point the probability of a

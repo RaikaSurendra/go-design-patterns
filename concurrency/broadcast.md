@@ -1,4 +1,4 @@
-# Broadcast Pattern
+# Broadcast Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The broadcast pattern transfers a message to all recipients simultaneously. A
 single producer sends a value, and every registered consumer receives a copy.

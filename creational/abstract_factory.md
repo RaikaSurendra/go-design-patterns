@@ -1,4 +1,4 @@
-# Abstract Factory Pattern
+# Abstract Factory Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The abstract factory pattern provides an interface for creating families of
 related objects without specifying their concrete types. The client code works

@@ -1,4 +1,4 @@
-# Memento Pattern
+# Memento Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The memento pattern captures and externalizes an object's internal state so that
 the object can be restored to this state later, without violating encapsulation.

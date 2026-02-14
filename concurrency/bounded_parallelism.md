@@ -1,4 +1,4 @@
-# Bounded Parallelism Pattern
+# Bounded Parallelism Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 [Bounded parallelism](https://blog.golang.org/pipelines#TOC_9.) is similar to [parallelism](parallelism.md), but allows limits to be placed on allocation.
 

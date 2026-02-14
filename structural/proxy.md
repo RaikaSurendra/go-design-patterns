@@ -1,4 +1,4 @@
-# Proxy Pattern
+# Proxy Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The [proxy pattern](https://en.wikipedia.org/wiki/Proxy_pattern) provides an object that controls access to another object, intercepting all calls.
 

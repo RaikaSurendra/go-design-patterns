@@ -1,4 +1,4 @@
-# Singleton Pattern
+# Singleton Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 Singleton creational design pattern restricts the instantiation of a type to a single object.
 

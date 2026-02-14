@@ -1,4 +1,4 @@
-# Bridge Pattern
+# Bridge Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The bridge pattern decouples an abstraction from its implementation so that the
 two can vary independently. Instead of combining every abstraction variant with

@@ -1,4 +1,4 @@
-# Builder Pattern
+# Builder Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 Builder pattern separates the construction of a complex object from its
 representation so that the same construction process can create different

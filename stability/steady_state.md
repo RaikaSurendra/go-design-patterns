@@ -1,4 +1,4 @@
-# Steady-State Pattern
+# Steady-State Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The steady-state pattern states that for every service that accumulates a
 resource, some other mechanism must recycle that resource. Without active

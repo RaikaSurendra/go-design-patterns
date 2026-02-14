@@ -1,4 +1,4 @@
-# Generator Pattern
+# Generator Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 [Generators](https://en.wikipedia.org/wiki/Generator_(computer_programming)) yields a sequence of values one at a time.
 

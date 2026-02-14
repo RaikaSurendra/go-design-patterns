@@ -1,4 +1,4 @@
-# Registry Pattern
+# Registry Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The registry pattern provides a well-known object that other objects can use to
 find common objects and services. It acts as a central lookup table where

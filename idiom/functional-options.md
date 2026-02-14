@@ -1,4 +1,4 @@
-# Functional Options
+# Functional Options <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 Functional options are a method of implementing clean/eloquent APIs in Go.
 Options implemented as a function set the state of that option.

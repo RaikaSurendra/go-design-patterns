@@ -1,4 +1,4 @@
-# Object Pool Pattern
+# Object Pool Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The object pool creational design pattern is used to prepare and keep multiple
 instances according to the demand expectation.

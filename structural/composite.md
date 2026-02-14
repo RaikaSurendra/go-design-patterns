@@ -1,4 +1,4 @@
-# Composite Pattern
+# Composite Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The composite pattern composes objects into tree structures to represent
 part-whole hierarchies. It allows clients to treat individual objects and

@@ -1,4 +1,4 @@
-# N-Barrier Pattern
+# N-Barrier Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The barrier pattern prevents a group of N goroutines from proceeding until all
 of them have reached the barrier point. Once the last goroutine arrives, all are

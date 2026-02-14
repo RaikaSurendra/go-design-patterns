@@ -1,4 +1,4 @@
-# Reactor Pattern
+# Reactor Pattern <span class="gp-difficulty gp-difficulty--hard">Hard</span>
 
 The reactor pattern demultiplexes service requests delivered concurrently to a
 service handler and dispatches them synchronously to the associated request

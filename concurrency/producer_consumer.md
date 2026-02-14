@@ -1,4 +1,4 @@
-# Producer Consumer Pattern
+# Producer Consumer Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The producer-consumer pattern separates task generation from task execution.
 Producers push work items into a shared buffer, and consumers pull items from

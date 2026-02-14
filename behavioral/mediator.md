@@ -1,4 +1,4 @@
-# Mediator Pattern
+# Mediator Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The mediator pattern defines an object that encapsulates how a set of objects
 interact. It promotes loose coupling by preventing objects from referring to each

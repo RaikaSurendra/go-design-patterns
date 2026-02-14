@@ -1,4 +1,4 @@
-# Template Pattern
+# Template Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The template pattern defines the skeleton of an algorithm in a base operation,
 deferring some steps to subclasses. It lets subclasses redefine certain steps of

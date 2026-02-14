@@ -1,4 +1,4 @@
-# Factory Method Pattern
+# Factory Method Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 Factory method creational design pattern allows creating objects without having
 to specify the exact type of the object that will be created.

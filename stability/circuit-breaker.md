@@ -1,4 +1,4 @@
-# Circuit Breaker Pattern
+# Circuit Breaker Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 Similar to electrical fuses that prevent fires when a circuit that is connected
 to the electrical grid starts drawing a high amount of power which causes the

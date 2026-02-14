@@ -1,4 +1,4 @@
-# Chain of Responsibility Pattern
+# Chain of Responsibility Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The chain of responsibility pattern avoids coupling the sender of a request to
 its receiver by giving more than one object a chance to handle the request.

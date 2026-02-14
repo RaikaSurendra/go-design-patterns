@@ -1,4 +1,4 @@
-# Condition Variable Pattern
+# Condition Variable Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 A condition variable allows goroutines to wait for a specific condition to become
 true. Rather than busy-looping and repeatedly checking, a goroutine suspends

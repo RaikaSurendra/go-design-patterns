@@ -1,4 +1,4 @@
-# Facade Pattern
+# Facade Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The facade pattern provides a simplified interface to a complex subsystem. It
 wraps multiple components behind a single, easy-to-use API so that clients don't

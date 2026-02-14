@@ -1,4 +1,4 @@
-# Monitor Pattern
+# Monitor Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 A monitor combines a mutex with one or more condition variables to protect
 shared state while allowing goroutines to wait for specific conditions. The

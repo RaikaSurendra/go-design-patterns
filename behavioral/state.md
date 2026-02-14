@@ -1,4 +1,4 @@
-# State Pattern
+# State Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The state pattern allows an object to alter its behavior when its internal state
 changes. The object appears to change its type. Each state is represented as a

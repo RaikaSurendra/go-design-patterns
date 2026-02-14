@@ -1,0 +1,321 @@
+/* ==========================================================================
+   Go Design Patterns — Modern Bold Theme
+   Inspired by Supabase / Linear aesthetics with Go brand colors
+   ========================================================================== */
+
+/* ---------- CSS Variables: Light Themes ---------- */
+.light,
+.rust {
+    --gp-primary: #00ADD8;
+    --gp-secondary: #CE3262;
+    --gp-accent: #FDDD00;
+    --gp-gradient: linear-gradient(135deg, #00ADD8, #CE3262);
+    --gp-bg: #FFFFFF;
+    --gp-bg-secondary: #F8FAFC;
+    --gp-bg-code: #F1F5F9;
+    --gp-text: #1E293B;
+    --gp-text-muted: #64748B;
+    --gp-border: #E2E8F0;
+    --gp-border-hover: #CBD5E1;
+    --gp-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --gp-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --gp-sidebar-bg: #F8FAFC;
+    --gp-sidebar-active: rgba(0, 173, 216, 0.1);
+    --gp-table-header-bg: linear-gradient(135deg, #00ADD8, #CE3262);
+    --gp-table-header-text: #FFFFFF;
+    --gp-table-stripe: #F8FAFC;
+    --gp-badge-easy-bg: rgba(16, 185, 129, 0.1);
+    --gp-badge-easy-text: #059669;
+    --gp-badge-easy-border: rgba(16, 185, 129, 0.3);
+    --gp-badge-medium-bg: rgba(245, 158, 11, 0.1);
+    --gp-badge-medium-text: #D97706;
+    --gp-badge-medium-border: rgba(245, 158, 11, 0.3);
+    --gp-badge-hard-bg: rgba(239, 68, 68, 0.1);
+    --gp-badge-hard-text: #DC2626;
+    --gp-badge-hard-border: rgba(239, 68, 68, 0.3);
+}
+
+/* ---------- CSS Variables: Dark Themes ---------- */
+.coal,
+.navy,
+.ayu {
+    --gp-primary: #00ADD8;
+    --gp-secondary: #CE3262;
+    --gp-accent: #FDDD00;
+    --gp-gradient: linear-gradient(135deg, #00ADD8, #CE3262);
+    --gp-bg: #0F172A;
+    --gp-bg-secondary: #1E293B;
+    --gp-bg-code: #1E293B;
+    --gp-text: #E2E8F0;
+    --gp-text-muted: #94A3B8;
+    --gp-border: #334155;
+    --gp-border-hover: #475569;
+    --gp-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --gp-shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+    --gp-sidebar-bg: #1E293B;
+    --gp-sidebar-active: rgba(0, 173, 216, 0.15);
+    --gp-table-header-bg: linear-gradient(135deg, #00ADD8, #CE3262);
+    --gp-table-header-text: #FFFFFF;
+    --gp-table-stripe: rgba(255, 255, 255, 0.03);
+    --gp-badge-easy-bg: rgba(16, 185, 129, 0.15);
+    --gp-badge-easy-text: #34D399;
+    --gp-badge-easy-border: rgba(16, 185, 129, 0.3);
+    --gp-badge-medium-bg: rgba(245, 158, 11, 0.15);
+    --gp-badge-medium-text: #FBBF24;
+    --gp-badge-medium-border: rgba(245, 158, 11, 0.3);
+    --gp-badge-hard-bg: rgba(239, 68, 68, 0.15);
+    --gp-badge-hard-text: #F87171;
+    --gp-badge-hard-border: rgba(239, 68, 68, 0.3);
+}
+
+/* ---------- Typography ---------- */
+body,
+.content,
+.sidebar {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+code,
+pre > code,
+.hljs {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace !important;
+}
+
+/* ---------- Headings ---------- */
+.content main h1 {
+    background: var(--gp-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    font-size: 2.2rem;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--gp-border);
+}
+
+.content main h2 {
+    color: var(--gp-primary);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    margin-top: 2em;
+}
+
+.content main h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+}
+
+/* ---------- Links ---------- */
+.content main a {
+    color: var(--gp-primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.content main a:hover {
+    color: var(--gp-secondary);
+    border-bottom-color: var(--gp-secondary);
+}
+
+/* ---------- Code Blocks ---------- */
+.content main pre {
+    border-radius: 8px !important;
+    border: 1px solid var(--gp-border) !important;
+    box-shadow: var(--gp-shadow);
+    padding: 1em !important;
+    margin: 1.5em 0 !important;
+    overflow-x: auto;
+}
+
+.content main pre > code {
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.content main :not(pre) > code {
+    background: var(--gp-bg-code);
+    border: 1px solid var(--gp-border);
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+    font-size: 0.88em;
+}
+
+/* ---------- Tables ---------- */
+.content main table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--gp-border);
+    margin: 1.5em 0;
+    box-shadow: var(--gp-shadow);
+}
+
+.content main table thead tr {
+    background: var(--gp-table-header-bg);
+}
+
+.content main table thead th {
+    color: var(--gp-table-header-text) !important;
+    font-weight: 600;
+    padding: 0.75em 1em;
+    text-align: left;
+    border-bottom: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+}
+
+.content main table tbody td {
+    padding: 0.65em 1em;
+    border-bottom: 1px solid var(--gp-border);
+}
+
+.content main table tbody tr:nth-child(even) {
+    background: var(--gp-table-stripe);
+}
+
+.content main table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.content main table tbody tr:hover {
+    background: var(--gp-sidebar-active);
+}
+
+/* ---------- Menu Bar ---------- */
+#menu-bar {
+    border-bottom: 3px solid;
+    border-image: var(--gp-gradient) 1;
+}
+
+#menu-bar .menu-title {
+    background: var(--gp-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar .sidebar-scrollbox {
+    border-top: 3px solid;
+    border-image: var(--gp-gradient) 1;
+    padding-top: 1em;
+}
+
+/* Sidebar category headers (part titles) */
+.sidebar .chapter li.part-title {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--gp-text-muted);
+    margin-top: 1.2em;
+    padding: 0.3em 0;
+}
+
+/* Sidebar links */
+.sidebar .chapter li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.35em 0.8em;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar .chapter li a:hover {
+    background: var(--gp-sidebar-active);
+    color: var(--gp-primary);
+}
+
+.sidebar .chapter li.chapter-item.expanded > a,
+.sidebar .chapter li a.active {
+    background: var(--gp-sidebar-active);
+    border-left-color: var(--gp-primary);
+    color: var(--gp-primary);
+    font-weight: 600;
+}
+
+/* ---------- Difficulty Badges ---------- */
+.gp-difficulty {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2em 0.7em;
+    border-radius: 9999px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 0.6em;
+    /* Reset gradient text from parent h1 */
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    border: 1.5px solid;
+}
+
+.gp-difficulty--easy {
+    background: var(--gp-badge-easy-bg);
+    color: var(--gp-badge-easy-text);
+    border-color: var(--gp-badge-easy-border);
+}
+
+.gp-difficulty--medium {
+    background: var(--gp-badge-medium-bg);
+    color: var(--gp-badge-medium-text);
+    border-color: var(--gp-badge-medium-border);
+}
+
+.gp-difficulty--hard {
+    background: var(--gp-badge-hard-bg);
+    color: var(--gp-badge-hard-text);
+    border-color: var(--gp-badge-hard-border);
+}
+
+/* ---------- Blockquotes ---------- */
+.content main blockquote {
+    border-left: 4px solid var(--gp-primary);
+    background: var(--gp-bg-secondary);
+    padding: 0.8em 1.2em;
+    margin: 1.5em 0;
+    border-radius: 0 8px 8px 0;
+    color: var(--gp-text-muted);
+    font-style: normal;
+}
+
+/* ---------- Scrollbar (dark themes) ---------- */
+.coal ::-webkit-scrollbar-thumb,
+.navy ::-webkit-scrollbar-thumb,
+.ayu ::-webkit-scrollbar-thumb {
+    background: var(--gp-border);
+    border-radius: 4px;
+}
+
+/* ---------- Nav Buttons ---------- */
+.nav-chapters {
+    transition: color 0.2s ease;
+}
+
+.nav-chapters:hover {
+    color: var(--gp-primary);
+}
+
+/* ---------- Page Transition ---------- */
+.content main {
+    animation: gp-fade-in 0.3s ease;
+}
+
+@keyframes gp-fade-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}

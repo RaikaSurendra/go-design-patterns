@@ -1,4 +1,4 @@
-# Visitor Pattern
+# Visitor Pattern <span class="gp-difficulty gp-difficulty--hard">Hard</span>
 
 The visitor pattern separates an algorithm from the object structure on which it
 operates. It allows you to add new operations to existing object structures

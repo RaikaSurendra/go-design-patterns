@@ -1,4 +1,4 @@
-# Parallelism Pattern
+# Parallelism Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 [Parallelism](https://blog.golang.org/pipelines#TOC_8.) allows multiple "jobs" or tasks to be run concurrently and asynchronously.
 

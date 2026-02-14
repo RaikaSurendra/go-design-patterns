@@ -1,4 +1,4 @@
-# Timing Functions
+# Timing Functions <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 When optimizing code, sometimes a quick and dirty time measurement is required
 as opposed to utilizing profiler tools/frameworks to validate assumptions.

@@ -1,5 +1,4 @@
-Publish & Subscribe Messaging Pattern
-============
+# Publish & Subscribe Messaging Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 Publish-Subscribe is a messaging pattern used to communicate messages between 
 different components without these components knowing anything about each other's identity.
 

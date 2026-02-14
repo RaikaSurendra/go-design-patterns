@@ -1,4 +1,4 @@
-# Command Pattern
+# Command Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The command pattern encapsulates a request as an object, allowing you to
 parameterize clients with different requests, queue or log requests, and

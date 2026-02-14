@@ -13,4 +13,4 @@ create-missing = false
 git-repository-url = "https://github.com/RaikaSurendra/go-design-patterns"
 edit-url-template = "https://github.com/RaikaSurendra/go-design-patterns/edit/master/{path}"
 no-section-label = true
-additional-css = []
+additional-css = ["theme/css/custom.css", "theme/css/landing.css"]

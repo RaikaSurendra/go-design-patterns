@@ -1,5 +1,4 @@
-Fan-In Messaging Patterns
-===================================
+# Fan-In Messaging Patterns <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 Fan-In is a messaging pattern used to create a funnel for work amongst workers (clients: source, server: destination).
 
 We can model fan-in using the Go channels.

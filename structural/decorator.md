@@ -1,4 +1,4 @@
-# Decorator Pattern
+# Decorator Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 Decorator structural pattern allows extending the function of an existing object dynamically without altering its internals.
 
 Decorators provide a flexible method to extend functionality of objects.

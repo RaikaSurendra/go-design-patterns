@@ -1,4 +1,4 @@
-# Fail-Fast Pattern
+# Fail-Fast Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 The fail-fast pattern checks the availability of required resources at the start
 of a request and fails immediately if the requirements are not satisfied. Rather

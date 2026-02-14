@@ -1,4 +1,4 @@
-# Semaphore Pattern
+# Semaphore Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 A semaphore is a synchronization pattern/primitive that imposes mutual exclusion on a limited number of resources. 
 
 ## Implementation

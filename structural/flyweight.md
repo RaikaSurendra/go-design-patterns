@@ -1,4 +1,4 @@
-# Flyweight Pattern
+# Flyweight Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The flyweight pattern minimizes memory usage by sharing as much data as possible
 with similar objects. It separates object state into **intrinsic** (shared,

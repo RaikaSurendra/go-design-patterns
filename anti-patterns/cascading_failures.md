@@ -1,4 +1,4 @@
-# Cascading Failures (Anti-Pattern)
+# Cascading Failures (Anti-Pattern) <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 A cascading failure occurs when a failure in one component of an interconnected
 system triggers failures in dependent components, creating a domino effect that

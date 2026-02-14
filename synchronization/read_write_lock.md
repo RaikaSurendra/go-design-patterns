@@ -1,4 +1,4 @@
-# Read-Write Lock Pattern
+# Read-Write Lock Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 A read-write lock allows multiple goroutines to hold the lock simultaneously for
 read operations, but only one goroutine can hold it for a write operation. This

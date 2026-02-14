@@ -1,4 +1,4 @@
-# Futures & Promises Pattern
+# Futures & Promises Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 A future acts as a placeholder for a result that is initially unknown because
 the computation has not yet completed. It provides a way to access the result

@@ -1,4 +1,4 @@
-# Handshaking Pattern
+# Handshaking Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The handshaking pattern allows a component to ask another component whether it
 can accept more load before sending actual work. If the target component signals

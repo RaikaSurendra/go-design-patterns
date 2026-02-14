@@ -1,4 +1,4 @@
-# Lock/Mutex Pattern
+# Lock/Mutex Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 
 A mutex (mutual exclusion) enforces exclusive access to a shared resource. Only
 one goroutine can hold the lock at any time — all others block until the lock is

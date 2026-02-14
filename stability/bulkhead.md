@@ -1,4 +1,4 @@
-# Bulkhead Pattern
+# Bulkhead Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The bulkhead pattern is inspired by the sectioned partitions (bulkheads) of a
 ship's hull. If one section is breached, only that section floods — the rest of

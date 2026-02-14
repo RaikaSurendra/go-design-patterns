@@ -1,4 +1,4 @@
-# Push & Pull Pattern
+# Push & Pull Pattern <span class="gp-difficulty gp-difficulty--medium">Medium</span>
 
 The push-pull pattern distributes messages to multiple workers arranged in a
 pipeline. A pusher sends work items downstream, workers (pullers) process them,

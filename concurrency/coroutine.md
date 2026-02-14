@@ -1,4 +1,4 @@
-# Coroutines Pattern
+# Coroutines Pattern <span class="gp-difficulty gp-difficulty--hard">Hard</span>
 
 Coroutines are subroutines that allow suspending and resuming execution at
 certain locations. Unlike regular functions that run to completion, coroutines

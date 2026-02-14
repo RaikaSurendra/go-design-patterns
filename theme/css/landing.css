@@ -1,0 +1,264 @@
+/* ==========================================================================
+   Go Design Patterns — Landing / Hero Page Styles
+   ========================================================================== */
+
+/* ---------- Hero Section ---------- */
+.gp-hero {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gp-hero__gopher {
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0 8px 24px rgba(0, 173, 216, 0.3));
+    transition: transform 0.4s ease, filter 0.4s ease;
+    margin-bottom: 1.5rem;
+}
+
+.gp-hero__gopher:hover {
+    transform: translateY(-8px) scale(1.03);
+    filter: drop-shadow(0 16px 40px rgba(0, 173, 216, 0.45));
+}
+
+.gp-hero__title {
+    font-size: 3.5rem !important;
+    font-weight: 900 !important;
+    background: var(--gp-gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    letter-spacing: -0.04em;
+    line-height: 1.1 !important;
+    margin: 0 0 0.4em !important;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.gp-hero__subtitle {
+    font-size: 1.2rem;
+    color: var(--gp-text-muted);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.gp-hero__subtitle strong {
+    color: var(--gp-primary);
+    font-weight: 600;
+}
+
+/* ---------- Stat Badges ---------- */
+.gp-stats {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.gp-stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    background: var(--gp-bg-secondary);
+    border: 1px solid var(--gp-border);
+    border-radius: 9999px;
+    padding: 0.5em 1.2em;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gp-text);
+    box-shadow: var(--gp-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gp-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--gp-shadow-lg);
+}
+
+.gp-stat__icon {
+    font-size: 1.1em;
+}
+
+.gp-stat__number {
+    color: var(--gp-primary);
+    font-weight: 700;
+}
+
+/* ---------- CTA Buttons ---------- */
+.gp-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.gp-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    padding: 0.7em 1.8em;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    border: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.gp-cta__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--gp-shadow-lg);
+}
+
+.gp-cta__btn--primary {
+    background: var(--gp-gradient);
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+.gp-cta__btn--primary:hover {
+    opacity: 0.9;
+}
+
+.gp-cta__btn--secondary {
+    background: transparent;
+    border: 2px solid var(--gp-primary) !important;
+    color: var(--gp-primary) !important;
+    -webkit-text-fill-color: var(--gp-primary) !important;
+}
+
+.gp-cta__btn--secondary:hover {
+    background: var(--gp-sidebar-active);
+}
+
+/* ---------- Category Cards Grid ---------- */
+.gp-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.gp-card {
+    background: var(--gp-bg-secondary);
+    border: 1px solid var(--gp-border);
+    border-radius: 12px;
+    padding: 1.5em;
+    text-align: left;
+    text-decoration: none !important;
+    color: var(--gp-text) !important;
+    -webkit-text-fill-color: var(--gp-text) !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    box-shadow: var(--gp-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.gp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--gp-shadow-lg);
+    border-color: var(--gp-primary);
+}
+
+.gp-card__icon {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    line-height: 1;
+}
+
+.gp-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    color: var(--gp-text) !important;
+    -webkit-text-fill-color: var(--gp-text) !important;
+}
+
+.gp-card__desc {
+    font-size: 0.82rem;
+    color: var(--gp-text-muted);
+    -webkit-text-fill-color: var(--gp-text-muted) !important;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 0.8em;
+}
+
+.gp-card__count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gp-primary);
+    -webkit-text-fill-color: var(--gp-primary) !important;
+    letter-spacing: 0.03em;
+}
+
+/* ---------- Divider ---------- */
+.gp-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--gp-gradient);
+    border: none;
+    border-radius: 2px;
+    margin: 2rem auto;
+}
+
+/* ---------- Footer Note ---------- */
+.gp-footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--gp-text-muted);
+    font-size: 0.85rem;
+}
+
+.gp-footer a {
+    color: var(--gp-primary) !important;
+    -webkit-text-fill-color: var(--gp-primary) !important;
+    font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .gp-hero__title {
+        font-size: 2.4rem !important;
+    }
+
+    .gp-hero__subtitle {
+        font-size: 1rem;
+    }
+
+    .gp-categories {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gp-stats {
+        gap: 0.5rem;
+    }
+
+    .gp-stat {
+        font-size: 0.8rem;
+        padding: 0.4em 0.9em;
+    }
+
+    .gp-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gp-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gp-hero__title {
+        font-size: 2.8rem !important;
+    }
+}

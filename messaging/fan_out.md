@@ -1,5 +1,4 @@
-Fan-Out Messaging Pattern
-=========================
+# Fan-Out Messaging Pattern <span class="gp-difficulty gp-difficulty--easy">Easy</span>
 Fan-Out is a messaging pattern used for distributing work amongst workers (producer: source, consumers: destination).
 
 We can model fan-out using the Go channels.
