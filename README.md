@@ -14,7 +14,7 @@
     </span>
     <span class="gp-stat">
       <span class="gp-stat__icon">📂</span>
-      <span class="gp-stat__number">9</span> Categories
+      <span class="gp-stat__number">10</span> Categories
     </span>
     <span class="gp-stat">
       <span class="gp-stat__icon">✅</span>
@@ -34,66 +34,73 @@
 
 <div class="gp-categories">
 
-  <a href="creational/abstract_factory.html" class="gp-card">
+  <a href="creational/abstract_factory.html" class="gp-card" id="creational-patterns">
     <div class="gp-card__icon">🏗️</div>
     <div class="gp-card__title">Creational</div>
     <div class="gp-card__desc">Object creation mechanisms — factories, builders, singletons, and pools.</div>
     <div class="gp-card__count">5 patterns</div>
   </a>
 
-  <a href="structural/bridge.html" class="gp-card">
+  <a href="structural/bridge.html" class="gp-card" id="structural-patterns">
     <div class="gp-card__icon">🧱</div>
     <div class="gp-card__title">Structural</div>
     <div class="gp-card__desc">Compose objects into larger structures — bridges, proxies, decorators, and facades.</div>
     <div class="gp-card__count">6 patterns</div>
   </a>
 
-  <a href="behavioral/chain_of_responsibility.html" class="gp-card">
+  <a href="behavioral/chain_of_responsibility.html" class="gp-card" id="behavioral-patterns">
     <div class="gp-card__icon">🎭</div>
     <div class="gp-card__title">Behavioral</div>
     <div class="gp-card__desc">Manage algorithms and object responsibilities — commands, observers, and strategies.</div>
     <div class="gp-card__count">10 patterns</div>
   </a>
 
-  <a href="synchronization/condition_variable.html" class="gp-card">
+  <a href="synchronization/condition_variable.html" class="gp-card" id="synchronization-patterns">
     <div class="gp-card__icon">🔒</div>
     <div class="gp-card__title">Synchronization</div>
     <div class="gp-card__desc">Coordinate concurrent access — mutexes, semaphores, monitors, and condition variables.</div>
     <div class="gp-card__count">5 patterns</div>
   </a>
 
-  <a href="concurrency/barrier.html" class="gp-card">
+  <a href="concurrency/barrier.html" class="gp-card" id="concurrency-patterns">
     <div class="gp-card__icon">⚡</div>
     <div class="gp-card__title">Concurrency</div>
     <div class="gp-card__desc">Harness goroutines and channels — barriers, generators, coroutines, and reactors.</div>
     <div class="gp-card__count">8 patterns</div>
   </a>
 
-  <a href="messaging/fan_in.html" class="gp-card">
+  <a href="messaging/fan_in.html" class="gp-card" id="messaging-patterns">
     <div class="gp-card__icon">📨</div>
     <div class="gp-card__title">Messaging</div>
     <div class="gp-card__desc">Move data between components — fan-in/out, pub/sub, futures, and push/pull.</div>
     <div class="gp-card__count">5 patterns</div>
   </a>
 
-  <a href="stability/bulkhead.html" class="gp-card">
+  <a href="stability/bulkhead.html" class="gp-card" id="stability-patterns">
     <div class="gp-card__icon">🛡️</div>
     <div class="gp-card__title">Stability</div>
     <div class="gp-card__desc">Build resilient systems — circuit breakers, bulkheads, deadlines, and fail-fast.</div>
     <div class="gp-card__count">6 patterns</div>
   </a>
 
-  <a href="profiling/timing.html" class="gp-card">
+  <a href="profiling/timing.html" class="gp-card" id="profiling-patterns">
     <div class="gp-card__icon">📊</div>
     <div class="gp-card__title">Profiling</div>
     <div class="gp-card__desc">Measure and optimize performance with timing functions and profiling wrappers.</div>
     <div class="gp-card__count">1 pattern</div>
   </a>
 
-  <a href="idiom/functional-options.html" class="gp-card">
+  <a href="idiom/functional-options.html" class="gp-card" id="idioms">
     <div class="gp-card__icon">🔧</div>
     <div class="gp-card__title">Idioms</div>
     <div class="gp-card__desc">Go-specific idioms — functional options for clean, extensible APIs.</div>
+    <div class="gp-card__count">1 pattern</div>
+  </a>
+
+  <a href="anti-patterns/cascading_failures.html" class="gp-card" id="anti-patterns">
+    <div class="gp-card__icon">⚠️</div>
+    <div class="gp-card__title">Anti-Patterns</div>
+    <div class="gp-card__desc">Common pitfalls — cascading failures and patterns to avoid in production systems.</div>
     <div class="gp-card__count">1 pattern</div>
   </a>
 

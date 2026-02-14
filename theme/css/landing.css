@@ -25,7 +25,7 @@
 
 .gp-hero__title {
     font-size: 3.5rem !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
     background: var(--gp-gradient) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;

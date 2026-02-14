@@ -72,7 +72,7 @@
 body,
 .content,
 .sidebar {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
 
 code,
@@ -87,7 +87,7 @@ pre > code,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 2.2rem;
     letter-spacing: -0.03em;
     line-height: 1.2;
@@ -208,41 +208,92 @@ pre > code,
 .sidebar .sidebar-scrollbox {
     border-top: 3px solid;
     border-image: var(--gp-gradient) 1;
-    padding-top: 1em;
+    padding-top: 0.5em;
+}
+
+/* Reset mdBook's default chapter-item spacing */
+.sidebar .chapter > li.chapter-item {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Collapse the wrapper li that contains only a part-title or spacer */
+.sidebar .chapter > li.chapter-item:has(> li.part-title),
+.sidebar .chapter > li.chapter-item:has(> li.spacer) {
+    display: contents;
+}
+
+/* Hide the first spacer (between title and first category) */
+.sidebar .chapter li.spacer {
+    display: block;
+    height: 0.5em;
+    border: none;
 }
 
 /* Sidebar category headers (part titles) */
 .sidebar .chapter li.part-title {
+    display: block;
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    color: var(--gp-text-muted);
-    margin-top: 1.2em;
-    padding: 0.3em 0;
+    color: var(--gp-primary);
+    margin: 1.4em 0 0.4em 0;
+    padding: 0.6em 1em 0.4em;
+    border-top: 1px solid var(--gp-border);
+    line-height: 1.3;
+}
+
+/* No top border on the very first category */
+.sidebar .chapter li.spacer + li.chapter-item > li.part-title,
+.sidebar .chapter li.part-title:first-of-type {
+    border-top: none;
+    margin-top: 0.6em;
 }
 
 /* Sidebar links */
-.sidebar .chapter li a {
-    font-size: 0.9rem;
+.sidebar .chapter li a,
+.sidebar .chapter li .chapter-link-wrapper a {
+    display: block;
+    font-size: 0.85rem;
     font-weight: 500;
-    padding: 0.35em 0.8em;
+    padding: 0.3em 0.8em 0.3em 1.4em;
     border-radius: 6px;
     transition: all 0.15s ease;
     border-left: 3px solid transparent;
+    line-height: 1.5;
 }
 
-.sidebar .chapter li a:hover {
+.sidebar .chapter li a:hover,
+.sidebar .chapter li .chapter-link-wrapper a:hover {
     background: var(--gp-sidebar-active);
     color: var(--gp-primary);
 }
 
-.sidebar .chapter li.chapter-item.expanded > a,
+.sidebar .chapter li.chapter-item.expanded > .chapter-link-wrapper > a.active,
 .sidebar .chapter li a.active {
     background: var(--gp-sidebar-active);
     border-left-color: var(--gp-primary);
     color: var(--gp-primary);
     font-weight: 600;
+}
+
+/* "Go Design Patterns" top link — make it stand out */
+.sidebar .chapter > li.chapter-item:first-child a {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-left: 1em;
+    color: var(--gp-primary);
+    margin-bottom: 0.3em;
+}
+
+/* "Contributing" bottom link */
+.sidebar .chapter > li.chapter-item:last-child a {
+    padding-left: 1em;
+    margin-top: 0.5em;
+    opacity: 0.7;
+    font-size: 0.8rem;
 }
 
 /* ---------- Difficulty Badges ---------- */
