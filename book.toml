@@ -1,0 +1,16 @@
+[book]
+title = "Go Design Patterns"
+authors = ["RaikaSurendra"]
+description = "A curated, actively maintained collection of idiomatic design & application patterns for Go"
+src = "."
+language = "en"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/RaikaSurendra/go-design-patterns"
+edit-url-template = "https://github.com/RaikaSurendra/go-design-patterns/edit/master/{path}"
+no-section-label = true
+additional-css = []
