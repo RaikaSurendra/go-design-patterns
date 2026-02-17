@@ -1,0 +1,102 @@
+/* Override mdBook theme variables for menu bar */
+:root {
+    --menu-bar-bg: #000000 !important;
+}
+
+.coal,
+.navy,
+.ayu {
+    --menu-bar-bg: #000000 !important;
+}
+
+/* Aggressive menu bar black background fix */
+#menu-bar,
+#menu-bar.bordered,
+.menu-bar,
+nav#menu-bar,
+.menu-bar-sticky {
+    background-color: #000000 !important;
+    background-image: none !important;
+    background: #000000 !important;
+}
+
+.coal #menu-bar,
+.coal #menu-bar.bordered,
+.coal .menu-bar,
+.navy #menu-bar,
+.navy #menu-bar.bordered,
+.navy .menu-bar,
+.ayu #menu-bar,
+.ayu #menu-bar.bordered,
+.ayu .menu-bar,
+.coal .menu-bar-sticky,
+.navy .menu-bar-sticky,
+.ayu .menu-bar-sticky {
+    background-color: #000000 !important;
+    background-image: none !important;
+    background: #000000 !important;
+}
+
+/* Ensure child elements don't have backgrounds */
+#menu-bar *:not(.icon-button) {
+    background-color: transparent !important;
+}
+
+/* Target sticky/fixed menu bar states */
+#menu-bar.sticky,
+#menu-bar.folded {
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+/* Target the specific hover placeholder div */
+#mdbook-menu-bar-hover-placeholder {
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+.coal #mdbook-menu-bar-hover-placeholder,
+.navy #mdbook-menu-bar-hover-placeholder,
+.ayu #mdbook-menu-bar-hover-placeholder {
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+/* Make all menu bar text white */
+#menu-bar,
+#menu-bar *,
+.mdbook-menu-bar,
+.mdbook-menu-bar * {
+    color: #fafafa !important;
+}
+
+.coal #menu-bar,
+.coal #menu-bar *,
+.coal .mdbook-menu-bar,
+.coal .mdbook-menu-bar *,
+.navy #menu-bar,
+.navy #menu-bar *,
+.navy .mdbook-menu-bar,
+.navy .mdbook-menu-bar *,
+.ayu #menu-bar,
+.ayu #menu-bar *,
+.ayu .mdbook-menu-bar,
+.ayu .mdbook-menu-bar * {
+    color: #ffffff !important;
+}
+
+#menu-bar .menu-title,
+.mdbook-menu-bar .menu-title {
+    color: #ffffff !important;
+}
+
+#menu-bar button,
+.mdbook-menu-bar button {
+    color: #fafafa !important;
+}
+
+/* Target center title specifically */
+#menu-bar-title,
+.menu-bar-title {
+    color: #ffffff !important;
+}

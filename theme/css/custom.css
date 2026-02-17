@@ -200,21 +200,53 @@ pre > code,
 }
 
 /* ---------- Menu Bar ---------- */
-#menu-bar {
+#menu-bar,
+#menu-bar.bordered {
+    background-color: #000000 !important;
     background: #000000 !important;
     border-bottom: 1px solid var(--gp-border);
 }
 
 .coal #menu-bar,
 .navy #menu-bar,
-.ayu #menu-bar {
+.ayu #menu-bar,
+.coal #menu-bar.bordered,
+.navy #menu-bar.bordered,
+.ayu #menu-bar.bordered {
+    background-color: #000000 !important;
     background: #000000 !important;
+}
+
+body.coal,
+body.navy,
+body.ayu {
+    --bg: #0a0a0a !important;
+}
+
+/* Force black on all possible menu bar selectors */
+.coal .menu-bar,
+.navy .menu-bar,
+.ayu .menu-bar {
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+#menu-bar > *,
+#menu-bar .left-buttons,
+#menu-bar .right-buttons {
+    background: transparent !important;
 }
 
 #menu-bar .menu-title {
     color: var(--gp-text);
     font-weight: 600;
     font-size: 1rem;
+}
+
+.coal #menu-bar .menu-title,
+.navy #menu-bar .menu-title,
+.ayu #menu-bar .menu-title {
+    color: #fafafa !important;
 }
 
 /* ---------- Sidebar ---------- */
