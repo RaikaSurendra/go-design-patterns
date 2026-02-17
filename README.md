@@ -4,13 +4,13 @@
   <h1 class="gp-hero__title">Go Design Patterns</h1>
 
   <p class="gp-hero__subtitle">
-    A curated collection of <strong>46 idiomatic design &amp; application patterns</strong> for the Go programming language — actively maintained and 100% implemented.
+    A curated collection of <strong>56 idiomatic design &amp; application patterns</strong> for the Go programming language — actively maintained and 100% implemented.
   </p>
 
   <div class="gp-stats">
     <span class="gp-stat">
       <span class="gp-stat__icon">📦</span>
-      <span class="gp-stat__number">46</span> Patterns
+      <span class="gp-stat__number">56</span> Patterns
     </span>
     <span class="gp-stat">
       <span class="gp-stat__icon">📂</span>
@@ -37,8 +37,8 @@
   <a href="creational/abstract_factory.html" class="gp-card" id="creational-patterns">
     <div class="gp-card__icon">🏗️</div>
     <div class="gp-card__title">Creational</div>
-    <div class="gp-card__desc">Object creation mechanisms — factories, builders, singletons, and pools.</div>
-    <div class="gp-card__count">5 patterns</div>
+    <div class="gp-card__desc">Object creation mechanisms — factories, builders, singletons, pools, and generics.</div>
+    <div class="gp-card__count">7 patterns</div>
   </a>
 
   <a href="structural/bridge.html" class="gp-card" id="structural-patterns">
@@ -65,8 +65,8 @@
   <a href="concurrency/barrier.html" class="gp-card" id="concurrency-patterns">
     <div class="gp-card__icon">⚡</div>
     <div class="gp-card__title">Concurrency</div>
-    <div class="gp-card__desc">Harness goroutines and channels — barriers, generators, coroutines, and reactors.</div>
-    <div class="gp-card__count">8 patterns</div>
+    <div class="gp-card__desc">Harness goroutines and channels — errgroups, pipelines, worker pools, and rate limiters.</div>
+    <div class="gp-card__count">12 patterns</div>
   </a>
 
   <a href="messaging/fan_in.html" class="gp-card" id="messaging-patterns">
@@ -93,8 +93,8 @@
   <a href="idiom/functional-options.html" class="gp-card" id="idioms">
     <div class="gp-card__icon">🔧</div>
     <div class="gp-card__title">Idioms</div>
-    <div class="gp-card__desc">Go-specific idioms — functional options for clean, extensible APIs.</div>
-    <div class="gp-card__count">1 pattern</div>
+    <div class="gp-card__desc">Go-specific idioms — functional options, context propagation, error wrapping, DI, and table-driven tests.</div>
+    <div class="gp-card__count">5 patterns</div>
   </a>
 
   <a href="anti-patterns/cascading_failures.html" class="gp-card" id="anti-patterns">

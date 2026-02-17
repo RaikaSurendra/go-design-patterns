@@ -9,8 +9,10 @@
 - [Abstract Factory](creational/abstract_factory.md)
 - [Builder](creational/builder.md)
 - [Factory Method](creational/factory.md)
+- [Map / Filter / Reduce](creational/functional_map_filter_reduce.md)
 - [Object Pool](creational/object-pool.md)
 - [Singleton](creational/singleton.md)
+- [Type-Safe Container](creational/generic_container.md)
 
 # 🧱 Structural Patterns
 
@@ -52,6 +54,10 @@
 - [Reactor](concurrency/reactor.md)
 - [Parallelism](concurrency/parallelism.md)
 - [Producer Consumer](concurrency/producer_consumer.md)
+- [Errgroup](concurrency/errgroup.md)
+- [Worker Pool](concurrency/worker_pool.md)
+- [Pipeline](concurrency/pipeline.md)
+- [Rate Limiter](concurrency/rate_limiter.md)
 
 # 📨 Messaging Patterns
 
@@ -77,6 +83,10 @@
 # 🔧 Idioms
 
 - [Functional Options](idiom/functional-options.md)
+- [Context Propagation](idiom/context_propagation.md)
+- [Error Wrapping & Sentinels](idiom/error_wrapping.md)
+- [Table-Driven Tests](idiom/table_driven_tests.md)
+- [Dependency Injection](idiom/dependency_injection.md)
 
 # ⚠️ Anti-Patterns
 
